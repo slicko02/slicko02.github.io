@@ -120,7 +120,7 @@ function loop() {
   // check to see if ball collides with paddle. if they do change x velocity
   if (collides(ball, leftPaddle)) {
     ball.dx *= -1;
-else if (ball.resetting = true){
+if (ball.resetting == true){
 scoreOne++;
 }
     // move ball next to the paddle otherwise the collision will happen again
@@ -129,7 +129,7 @@ scoreOne++;
   }
   else if (collides(ball, rightPaddle)) {
     ball.dx *= -1;
-else if (ball.resetting = true){
+if (ball.resetting == true){
 scoreTwo++;
 }
     // move ball next to the paddle otherwise the collision will happen again

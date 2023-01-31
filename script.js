@@ -6,6 +6,8 @@ const maxPaddleY = canvas.height - grid - paddleHeight;
 
 var paddleSpeed = 6;
 var ballSpeed = 5;
+var scoreOne = 0;
+var scoreTwo = 0;
 
 const leftPaddle = {
   // start in the middle of the game on the left side
@@ -97,6 +99,7 @@ function loop() {
   // reset ball if it goes past paddle (but only if we haven't already done so)
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
     ball.resetting = true;
+    
 
     // give some time for the player to recover before launching the ball again
     setTimeout(() => {
@@ -109,14 +112,18 @@ function loop() {
   // check to see if ball collides with paddle. if they do change x velocity
   if (collides(ball, leftPaddle)) {
     ball.dx *= -1;
-
+if (ball.resetting = true){
+scoreOne++;
+}
     // move ball next to the paddle otherwise the collision will happen again
     // in the next frame
     ball.x = leftPaddle.x + leftPaddle.width;
   }
   else if (collides(ball, rightPaddle)) {
     ball.dx *= -1;
-
+if (ball.resetting = true){
+scoreTwo++;
+}
     // move ball next to the paddle otherwise the collision will happen again
     // in the next frame
     ball.x = rightPaddle.x - ball.width;

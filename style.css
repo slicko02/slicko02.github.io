@@ -9,3 +9,9 @@
     align-items: center;
     justify-content: center;
   }
+.display {
+  color: white;
+  background-color: #2ecc71;
+  width: 20px;
+  height: 20px;
+}

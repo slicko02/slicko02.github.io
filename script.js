@@ -8,10 +8,12 @@ var paddleSpeed = 6;
 var ballSpeed = 5;
 var scoreOne = 0;
 var scoreTwo = 0;
+var space = "  ";
 
 var t = setInterval(function() {
   // you can change `random` to any variable you want to be displayed
   document.getElementById("display").innerHTML = scoreOne;
+  document.getElementById("space").innerHTML = space;
   document.getElementById("displayTwo").innerHTML = scoreTwo;
 }, 500);
 
@@ -105,7 +107,14 @@ function loop() {
   // reset ball if it goes past paddle (but only if we haven't already done so)
   if ( (ball.x < 0 || ball.x > canvas.width) && !ball.resetting) {
     ball.resetting = true;
+   
+      if (ball.x < 0 ) {
+        scoreTwo++;
+      }
     
+    if(ball.x > canvas.width){
+      scoreOne++
+    }
 
     // give some time for the player to recover before launching the ball again
     setTimeout(() => {

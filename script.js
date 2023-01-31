@@ -11,8 +11,8 @@ var scoreTwo = 0;
 
 var t = setInterval(function() {
   // you can change `random` to any variable you want to be displayed
-  var random = Math.random();
-  document.getElementById("display").innerHTML = random;
+  document.getElementById("display").innerHTML = scoreOne;
+  document.getElementById("displayTwo").innerHTML = scoreTwo;
 }, 500);
 
 const leftPaddle = {

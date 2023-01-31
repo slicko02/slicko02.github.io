@@ -9,6 +9,14 @@ var ballSpeed = 5;
 var scoreOne = 0;
 var scoreTwo = 0;
 
+const score = {
+  // start in the middle top of the game
+  x: canvas.width / 2,
+  y: canvas.height,
+  width: grid*2,
+  height: grid*2,
+};
+
 const leftPaddle = {
   // start in the middle of the game on the left side
   x: grid * 2,

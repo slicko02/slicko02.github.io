@@ -176,5 +176,7 @@ document.addEventListener('keyup', function(e) {
   }
 });
 
+document.getElementById('scoreOne').innerHTML = scoreOne.toString()
+document.getElementById('scoreTwo').innerHTML = scoreTwo.toString()
 // start the game
 requestAnimationFrame(loop);

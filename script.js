@@ -8,12 +8,14 @@ var paddleSpeed = 6;
 var ballSpeed = 5;
 var scoreOne = 0;
 var scoreTwo = 0;
-var space = "  ";
+var playerOne = "Player One: ";
+var playerTwo = " Player Two: ";
 
 var t = setInterval(function() {
   // you can change `random` to any variable you want to be displayed
+  document.getElementById("playerOne").innerHTML = playerOne;
   document.getElementById("display").innerHTML = scoreOne;
-  document.getElementById("space").innerHTML = space;
+  document.getElementById("playerTwo").innerHTML = playerTwo;
   document.getElementById("displayTwo").innerHTML = scoreTwo;
 }, 500);
 

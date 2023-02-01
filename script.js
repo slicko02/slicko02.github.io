@@ -8,13 +8,9 @@ var paddleSpeed = 6;
 var ballSpeed = 5;
 var scoreOne = 0;
 var scoreTwo = 0;
-var playerOne = "Player One: ";
-var playerTwo = " Player Two: ";
 
 var t = setInterval(function() {
-  //document.getElementById("playerOne").innerHTML = playerOne;
   document.getElementById("display").innerHTML = scoreOne;
-  //document.getElementById("playerTwo").innerHTML = playerTwo;
   document.getElementById("displayTwo").innerHTML = scoreTwo;
 }, 500);
 

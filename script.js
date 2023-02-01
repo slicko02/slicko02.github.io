@@ -12,10 +12,9 @@ var playerOne = "Player One: ";
 var playerTwo = " Player Two: ";
 
 var t = setInterval(function() {
-  // you can change `random` to any variable you want to be displayed
-  document.getElementById("playerOne").innerHTML = playerOne;
+  //document.getElementById("playerOne").innerHTML = playerOne;
   document.getElementById("display").innerHTML = scoreOne;
-  document.getElementById("playerTwo").innerHTML = playerTwo;
+  //document.getElementById("playerTwo").innerHTML = playerTwo;
   document.getElementById("displayTwo").innerHTML = scoreTwo;
 }, 500);
 

@@ -4,7 +4,7 @@
   }
 
   body {
-    background: blue;
+    background: rgb(186, 131, 240);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -2,19 +2,25 @@
 <html>
 <head>
   <title>Basic Pong HTML Game</title>
-  <link rel="stylesheet"type="text/css" href="https://slicko02.github.io/style.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="UTF-8">
 </head>
 <body>
+  <div id="modal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <h2 id="winner-text"></h2>
+      <button id="reset-button">Reset</button>
+    </div>
+  </div>
   <canvas width="750" height="585" id="game"></canvas>
-  <script src="https://slicko02.github.io/script.js"></script>
+  <script src="./script.js"></script>
   <p>Player One:</p>
   <p>&nbsp;</p>
-<div id="display"></div>
-    <p>&nbsp;</p>
-    <p>&nbsp;</p>
-  <p>Player Two:</p>
-    <p>&nbsp;</p>
-<div id="displayTwo"></div>
+  <div id="display"></div>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    <p>Player Two:</p>
+      <p>&nbsp;</p>
+  <div id="displayTwo"></div>
 </body>
 </html>
